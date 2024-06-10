@@ -4,3 +4,4 @@ Static table submission for the ![2024 Posit Table Contest](https://posit.co/blo
 
 Data was collected and complied from ![NFL.com](https://www.nfl.com/news/bucky-brooks-2024-nfl-mock-draft-3-0) and ![Sharp Football](https://www.sharpfootballanalysis.com/analysis/mel-kiper-mock-draft-nfl/). 
 
+![](https://github.com/nvietto/Table-Contest-2024/blob/main/Table.png)
