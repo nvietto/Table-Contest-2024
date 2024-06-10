@@ -1,0 +1,4 @@
+- source: 2024 Table Entry.qmd
+  quarto-pub:
+    - id: 159f5d5a-fb80-4522-a9ea-c414aa802995
+      url: 'https://nvietto.quarto.pub/all-mocks-are-wrong-but-some-are-useful'
