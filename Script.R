@@ -21,7 +21,7 @@ data <- data |>
   ungroup() |> 
   mutate(mean_projection = as.numeric(mean_projection)) |> 
   mutate(mean_projection_1 = mean_projection) |> 
-  mutate(change_score = mean_projection_1 - actual_1) |> 
+  mutate(change_score = abs(mean_projection_1 - actual_1)) |> 
   select(players, mean_projection, actual_1, change_score, positions, who_was_correct)
 
 
