@@ -14,7 +14,7 @@ This table was built in R using [{gt}](https://gt.rstudio.com/) and [{gtExtras}]
 
 Data wrangling was completed using [{janitor}](https://github.com/sfirke/janitor), [{readxl}](https://github.com/tidyverse/readxl), and [{tidyverse}](https://www.tidyverse.org/). 
 
-## Table Contest Information and Submission
+## Table Contest Information and Submission:
 
 Static table submission for the [2024 Posit Table Contest](https://posit.co/blog/announcing-the-2024-table-contest/). 
 
