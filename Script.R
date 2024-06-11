@@ -39,7 +39,7 @@ data |>
     heading.align = "Center",
     heading.title.font.size = px(24),
     heading.background.color = "#5BBCD6") |> 
-  opt_table_font(font = google_font(name = "Lobster")) |> 
+  opt_table_font(font = google_font(name = "Playfair Display")) |> 
   cols_label(
     players = 'Player Name',
     actual_1 = 'Actual Draft Position',
@@ -53,7 +53,7 @@ data |>
     columns = c(actual_1, mean_projection),
     domain = c(0, 100),
     palette = color_palette) |> 
-  opt_stylize(style = 5) |> 
+  opt_stylize(style = 6) |> 
   gt_plt_bar_pct(change_score, fill="#5BBCD6", scaled = TRUE) |> 
   cols_align(align = "center", columns = c(mean_projection, actual_1, change_score)) |> 
   tab_source_note(source_note = ("Data: NFL.com and Sharp Football | Table created by Nicholas Vietto for the 2024 Posit Table Contest"))
