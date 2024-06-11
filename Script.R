@@ -21,7 +21,8 @@ data <- data |>
   ungroup() |> 
   mutate(mean_projection = as.numeric(mean_projection)) |> 
   mutate(mean_projection_1 = mean_projection) |> 
-  select(players, mean_projection, mean_projection_1, actual_1, positions, who_was_correct)
+  mutate(change_score = mean_projection_1 - actual_1) |> 
+  select(players, mean_projection, actual_1, change_score, positions, who_was_correct)
 
 
 color_palette <- c("#3B9AB2", "#F21A00", "#FF0000")
@@ -42,9 +43,9 @@ data |>
   cols_label(
     players = 'Player Name',
     actual_1 = 'Actual Draft Position',
+    change_score = 'Difference',
     who_was_correct = 'Who Predicted Correctly',
     mean_projection = 'Average Projected Draft Position',
-    mean_projection_1 = "",
     positions = md('Projected Position <br> (DJ, PS, MK, BB, Actual)'), 
   ) |> 
   gt_plt_sparkline(column = positions, palette = c("#FF0000", "#00A08A", "#F2AD00", "#F98400", "#5BBCD6"))|> 
@@ -53,8 +54,8 @@ data |>
     domain = c(0, 100),
     palette = color_palette) |> 
   opt_stylize(style = 5) |> 
-  gt_plt_bar_pct(mean_projection_1, fill="#5BBCD6") |> 
-  cols_align(align = "center", columns = c(mean_projection, actual_1)) |> 
+  gt_plt_bar_pct(change_score, fill="#5BBCD6", scaled = TRUE) |> 
+  cols_align(align = "center", columns = c(mean_projection, actual_1, change_score)) |> 
   tab_source_note(source_note = ("Data: NFL.com and Sharp Football | Table created by Nicholas Vietto for the 2024 Posit Table Contest"))
 
 
