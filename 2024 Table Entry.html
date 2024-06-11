@@ -80,7 +80,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#load-packages-and-data" id="toc-load-packages-and-data" class="nav-link active" data-scroll-target="#load-packages-and-data">Load Packages and Data</a></li>
+  <li><a href="#full-description" id="toc-full-description" class="nav-link active" data-scroll-target="#full-description">Full Description:</a></li>
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal:</a></li>
+  <li><a href="#load-packages-and-data" id="toc-load-packages-and-data" class="nav-link" data-scroll-target="#load-packages-and-data">Load Packages and Data</a></li>
   <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data Wrangling</a></li>
   <li><a href="#data-table" id="toc-data-table" class="nav-link" data-scroll-target="#data-table">Data Table</a></li>
   </ul>
@@ -115,9 +117,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This table was built in R using <a href="https://gt.rstudio.com/">{gt}</a> and <a href="https://jthomasmock.github.io/gtExtras/">{gtExtras}</a>.</p>
+<section id="full-description" class="level2">
+<h2 class="anchored" data-anchor-id="full-description">Full Description:</h2>
+<p>This table presents the first-round results of the 2024 NFL Draft alongside the final 2024 NFL Mock Draft predictions from the four most popular draft analysts. Although mock drafts offer engaging content throughout the draft season, their accuracy typically declines after the top four picks.</p>
+</section>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal:</h2>
+<p>The purpose of this table was to experiment with {gt} and {gtExtra} to create an engaging data visual</p>
 <p>Data was collected and complied from <a href="https://www.nfl.com/news/bucky-brooks-2024-nfl-mock-draft-3-0">NFL.com</a> and <a href="https://www.sharpfootballanalysis.com/analysis/mel-kiper-mock-draft-nfl/">Sharp Football</a>.</p>
+<p>This table was built in R using <a href="https://gt.rstudio.com/">{gt}</a> and <a href="https://jthomasmock.github.io/gtExtras/">{gtExtras}</a>.</p>
 <p>Data wrangling was completed using <a href="https://github.com/sfirke/janitor">{janitor}</a>, <a href="https://github.com/tidyverse/readxl">{readxl}</a>, and <a href="https://www.tidyverse.org/">{tidyverse}</a>.</p>
+</section>
 <section id="load-packages-and-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-packages-and-data">Load Packages and Data</h2>
 <div class="cell">
@@ -191,24 +201,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(<span class="at">source_note =</span> (<span class="st">"Data: NFL.com and Sharp Football | Table created by Nicholas Vietto for the 2024 Posit Table Contest"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="ecrwlgfrfr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="quphccoyuw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Lobster:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#ecrwlgfrfr table {
+#quphccoyuw table {
   font-family: Lobster, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ecrwlgfrfr thead, #ecrwlgfrfr tbody, #ecrwlgfrfr tfoot, #ecrwlgfrfr tr, #ecrwlgfrfr td, #ecrwlgfrfr th {
+#quphccoyuw thead, #quphccoyuw tbody, #quphccoyuw tfoot, #quphccoyuw tr, #quphccoyuw td, #quphccoyuw th {
   border-style: none;
 }
 
-#ecrwlgfrfr p {
+#quphccoyuw p {
   margin: 0;
   padding: 0;
 }
 
-#ecrwlgfrfr .gt_table {
+#quphccoyuw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -234,12 +244,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_caption {
+#quphccoyuw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ecrwlgfrfr .gt_title {
+#quphccoyuw .gt_title {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: initial;
@@ -251,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ecrwlgfrfr .gt_subtitle {
+#quphccoyuw .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -263,7 +273,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ecrwlgfrfr .gt_heading {
+#quphccoyuw .gt_heading {
   background-color: #5BBCD6;
   text-align: Center;
   border-bottom-color: #FFFFFF;
@@ -275,13 +285,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ecrwlgfrfr .gt_bottom_border {
+#quphccoyuw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_col_headings {
+#quphccoyuw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -296,7 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ecrwlgfrfr .gt_col_heading {
+#quphccoyuw .gt_col_heading {
   color: #FFFFFF;
   background-color: #004D80;
   font-size: 100%;
@@ -316,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ecrwlgfrfr .gt_column_spanner_outer {
+#quphccoyuw .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #004D80;
   font-size: 100%;
@@ -328,15 +338,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ecrwlgfrfr .gt_column_spanner_outer:first-child {
+#quphccoyuw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ecrwlgfrfr .gt_column_spanner_outer:last-child {
+#quphccoyuw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ecrwlgfrfr .gt_column_spanner {
+#quphccoyuw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D5D5D5;
@@ -348,11 +358,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ecrwlgfrfr .gt_spanner_row {
+#quphccoyuw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ecrwlgfrfr .gt_group_heading {
+#quphccoyuw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -378,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ecrwlgfrfr .gt_empty_group_heading {
+#quphccoyuw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -393,15 +403,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ecrwlgfrfr .gt_from_md > :first-child {
+#quphccoyuw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ecrwlgfrfr .gt_from_md > :last-child {
+#quphccoyuw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ecrwlgfrfr .gt_row {
+#quphccoyuw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -420,7 +430,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ecrwlgfrfr .gt_stub {
+#quphccoyuw .gt_stub {
   color: #FFFFFF;
   background-color: #929292;
   font-size: 100%;
@@ -433,7 +443,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ecrwlgfrfr .gt_stub_row_group {
+#quphccoyuw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -447,15 +457,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ecrwlgfrfr .gt_row_group_first td {
+#quphccoyuw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ecrwlgfrfr .gt_row_group_first th {
+#quphccoyuw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ecrwlgfrfr .gt_summary_row {
+#quphccoyuw .gt_summary_row {
   color: #FFFFFF;
   background-color: #5F5F5F;
   text-transform: inherit;
@@ -465,16 +475,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ecrwlgfrfr .gt_first_summary_row {
+#quphccoyuw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_first_summary_row.thick {
+#quphccoyuw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ecrwlgfrfr .gt_last_summary_row {
+#quphccoyuw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -484,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_grand_summary_row {
+#quphccoyuw .gt_grand_summary_row {
   color: #FFFFFF;
   background-color: #929292;
   text-transform: inherit;
@@ -494,7 +504,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ecrwlgfrfr .gt_first_grand_summary_row {
+#quphccoyuw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -504,7 +514,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_last_grand_summary_row_top {
+#quphccoyuw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -514,11 +524,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_striped {
+#quphccoyuw .gt_striped {
   background-color: #F4F4F4;
 }
 
-#ecrwlgfrfr .gt_table_body {
+#quphccoyuw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D5D5D5;
@@ -527,7 +537,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D5D5D5;
 }
 
-#ecrwlgfrfr .gt_footnotes {
+#quphccoyuw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -541,7 +551,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ecrwlgfrfr .gt_footnote {
+#quphccoyuw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -550,7 +560,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ecrwlgfrfr .gt_sourcenotes {
+#quphccoyuw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -564,7 +574,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ecrwlgfrfr .gt_sourcenote {
+#quphccoyuw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -572,63 +582,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ecrwlgfrfr .gt_left {
+#quphccoyuw .gt_left {
   text-align: left;
 }
 
-#ecrwlgfrfr .gt_center {
+#quphccoyuw .gt_center {
   text-align: center;
 }
 
-#ecrwlgfrfr .gt_right {
+#quphccoyuw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ecrwlgfrfr .gt_font_normal {
+#quphccoyuw .gt_font_normal {
   font-weight: normal;
 }
 
-#ecrwlgfrfr .gt_font_bold {
+#quphccoyuw .gt_font_bold {
   font-weight: bold;
 }
 
-#ecrwlgfrfr .gt_font_italic {
+#quphccoyuw .gt_font_italic {
   font-style: italic;
 }
 
-#ecrwlgfrfr .gt_super {
+#quphccoyuw .gt_super {
   font-size: 65%;
 }
 
-#ecrwlgfrfr .gt_footnote_marks {
+#quphccoyuw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ecrwlgfrfr .gt_asterisk {
+#quphccoyuw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ecrwlgfrfr .gt_indent_1 {
+#quphccoyuw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ecrwlgfrfr .gt_indent_2 {
+#quphccoyuw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ecrwlgfrfr .gt_indent_3 {
+#quphccoyuw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ecrwlgfrfr .gt_indent_4 {
+#quphccoyuw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ecrwlgfrfr .gt_indent_5 {
+#quphccoyuw .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
