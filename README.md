@@ -20,6 +20,6 @@ Static table submission for the [2024 Posit Table Contest](https://posit.co/blog
 
 Check out the submission [here](https://nvietto.quarto.pub/all-mocks-are-wrong-but-some-are-useful/)
 
-![](https://github.com/nvietto/Table-Contest-2024/blob/main/Table.png)
+
 
 
