@@ -180,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="fu">md</span>(<span class="st">'**All Mocks are Wrong, but Some are Useful**'</span>),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="fu">md</span>(<span class="st">'*The final 2024 Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)*'</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="fu">md</span>(<span class="st">"*The final 2024 &lt;span style='font-family: Times New Roman;'&gt;**NFL**&lt;/span&gt; Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)*"</span>)) <span class="sc">|&gt;</span> </span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">heading.align =</span> <span class="st">"Center"</span>,</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">heading.title.font.size =</span> <span class="fu">px</span>(<span class="dv">24</span>),</span>
@@ -200,29 +200,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">domain =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>),</span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">palette =</span> color_palette) <span class="sc">|&gt;</span> </span>
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_stylize</span>(<span class="at">style =</span> <span class="dv">6</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt_plt_bar_pct</span>(change_score, <span class="at">fill=</span><span class="st">"#5BBCD6"</span>, <span class="at">scaled =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt_plt_bar_pct</span>(change_score, <span class="at">fill=</span><span class="st">"#5BBCD6"</span>, <span class="at">scaled =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_align</span>(<span class="at">align =</span> <span class="st">"center"</span>, <span class="at">columns =</span> <span class="fu">c</span>(mean_projection, actual_1, change_score)) <span class="sc">|&gt;</span> </span>
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(<span class="at">source_note =</span> (<span class="st">"Data: NFL.com and Sharp Football | Table created by Nicholas Vietto for the 2024 Posit Table Contest"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="aazrhwmzfy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="emdntzflbh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#aazrhwmzfy table {
+#emdntzflbh table {
   font-family: 'Playfair Display', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#aazrhwmzfy thead, #aazrhwmzfy tbody, #aazrhwmzfy tfoot, #aazrhwmzfy tr, #aazrhwmzfy td, #aazrhwmzfy th {
+#emdntzflbh thead, #emdntzflbh tbody, #emdntzflbh tfoot, #emdntzflbh tr, #emdntzflbh td, #emdntzflbh th {
   border-style: none;
 }
 
-#aazrhwmzfy p {
+#emdntzflbh p {
   margin: 0;
   padding: 0;
 }
 
-#aazrhwmzfy .gt_table {
+#emdntzflbh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -248,12 +248,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#aazrhwmzfy .gt_caption {
+#emdntzflbh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#aazrhwmzfy .gt_title {
+#emdntzflbh .gt_title {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: initial;
@@ -265,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#aazrhwmzfy .gt_subtitle {
+#emdntzflbh .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#aazrhwmzfy .gt_heading {
+#emdntzflbh .gt_heading {
   background-color: #5BBCD6;
   text-align: Center;
   border-bottom-color: #FFFFFF;
@@ -289,13 +289,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#aazrhwmzfy .gt_bottom_border {
+#emdntzflbh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_col_headings {
+#emdntzflbh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -310,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#aazrhwmzfy .gt_col_heading {
+#emdntzflbh .gt_col_heading {
   color: #FFFFFF;
   background-color: #0076BA;
   font-size: 100%;
@@ -330,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#aazrhwmzfy .gt_column_spanner_outer {
+#emdntzflbh .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #0076BA;
   font-size: 100%;
@@ -342,15 +342,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#aazrhwmzfy .gt_column_spanner_outer:first-child {
+#emdntzflbh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#aazrhwmzfy .gt_column_spanner_outer:last-child {
+#emdntzflbh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#aazrhwmzfy .gt_column_spanner {
+#emdntzflbh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
@@ -362,11 +362,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#aazrhwmzfy .gt_spanner_row {
+#emdntzflbh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#aazrhwmzfy .gt_group_heading {
+#emdntzflbh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -392,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#aazrhwmzfy .gt_empty_group_heading {
+#emdntzflbh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -407,15 +407,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#aazrhwmzfy .gt_from_md > :first-child {
+#emdntzflbh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#aazrhwmzfy .gt_from_md > :last-child {
+#emdntzflbh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#aazrhwmzfy .gt_row {
+#emdntzflbh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -434,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#aazrhwmzfy .gt_stub {
+#emdntzflbh .gt_stub {
   color: #333333;
   background-color: #89D3FE;
   font-size: 100%;
@@ -447,7 +447,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#aazrhwmzfy .gt_stub_row_group {
+#emdntzflbh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -461,15 +461,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#aazrhwmzfy .gt_row_group_first td {
+#emdntzflbh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#aazrhwmzfy .gt_row_group_first th {
+#emdntzflbh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#aazrhwmzfy .gt_summary_row {
+#emdntzflbh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -479,16 +479,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#aazrhwmzfy .gt_first_summary_row {
+#emdntzflbh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_first_summary_row.thick {
+#emdntzflbh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#aazrhwmzfy .gt_last_summary_row {
+#emdntzflbh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -498,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_grand_summary_row {
+#emdntzflbh .gt_grand_summary_row {
   color: #333333;
   background-color: #D5D5D5;
   text-transform: inherit;
@@ -508,7 +508,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#aazrhwmzfy .gt_first_grand_summary_row {
+#emdntzflbh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -518,7 +518,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_last_grand_summary_row_top {
+#emdntzflbh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -528,11 +528,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_striped {
+#emdntzflbh .gt_striped {
   background-color: #EDF7FC;
 }
 
-#aazrhwmzfy .gt_table_body {
+#emdntzflbh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -541,7 +541,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #5F5F5F;
 }
 
-#aazrhwmzfy .gt_footnotes {
+#emdntzflbh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -555,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#aazrhwmzfy .gt_footnote {
+#emdntzflbh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -564,7 +564,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#aazrhwmzfy .gt_sourcenotes {
+#emdntzflbh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -578,7 +578,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#aazrhwmzfy .gt_sourcenote {
+#emdntzflbh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -586,63 +586,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#aazrhwmzfy .gt_left {
+#emdntzflbh .gt_left {
   text-align: left;
 }
 
-#aazrhwmzfy .gt_center {
+#emdntzflbh .gt_center {
   text-align: center;
 }
 
-#aazrhwmzfy .gt_right {
+#emdntzflbh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#aazrhwmzfy .gt_font_normal {
+#emdntzflbh .gt_font_normal {
   font-weight: normal;
 }
 
-#aazrhwmzfy .gt_font_bold {
+#emdntzflbh .gt_font_bold {
   font-weight: bold;
 }
 
-#aazrhwmzfy .gt_font_italic {
+#emdntzflbh .gt_font_italic {
   font-style: italic;
 }
 
-#aazrhwmzfy .gt_super {
+#emdntzflbh .gt_super {
   font-size: 65%;
 }
 
-#aazrhwmzfy .gt_footnote_marks {
+#emdntzflbh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#aazrhwmzfy .gt_asterisk {
+#emdntzflbh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#aazrhwmzfy .gt_indent_1 {
+#emdntzflbh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#aazrhwmzfy .gt_indent_2 {
+#emdntzflbh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#aazrhwmzfy .gt_indent_3 {
+#emdntzflbh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#aazrhwmzfy .gt_indent_4 {
+#emdntzflbh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#aazrhwmzfy .gt_indent_5 {
+#emdntzflbh .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -653,7 +653,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th colspan="6" class="gt_heading gt_title gt_font_normal"><strong>All Mocks are Wrong, but Some are Useful</strong></th>
 </tr>
 <tr class="odd gt_heading">
-<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border"><em>The final 2024 Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)</em></th>
+<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border"><em>The final 2024 <span style="font-family: Times New Roman;"><strong>NFL</strong></span> Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)</em></th>
 </tr>
 <tr class="header gt_col_headings">
 <th id="Player Name" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Player Name</th>
@@ -735,7 +735,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #76909B; color: #FFFFFF">7</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #6993A1; color: #FFFFFF">5</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -767,7 +767,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #7B8E97; color: #FFFFFF">8</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #76909B; color: #FFFFFF">7</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:1%;height:16px;">
+<div style="background:#5BBCD6;width:3.2258064516129%;height:16px;">
 
 </div>
 </div></td>
@@ -783,7 +783,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #938787; color: #FFFFFF">13</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #7B8E97; color: #FFFFFF">8</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:5%;height:16px;">
+<div style="background:#5BBCD6;width:16.1290322580645%;height:16px;">
 
 </div>
 </div></td>
@@ -815,7 +815,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #7B8E97; color: #FFFFFF">8</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #858B91; color: #FFFFFF">10</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -831,7 +831,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #8E888A; color: #FFFFFF">12</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #8A8A8D; color: #FFFFFF">11</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:1%;height:16px;">
+<div style="background:#5BBCD6;width:3.2258064516129%;height:16px;">
 
 </div>
 </div></td>
@@ -847,7 +847,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #A2807A; color: #FFFFFF">17</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #8E888A; color: #FFFFFF">12</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:5%;height:16px;">
+<div style="background:#5BBCD6;width:16.1290322580645%;height:16px;">
 
 </div>
 </div></td>
@@ -863,7 +863,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #8A8A8D; color: #FFFFFF">11</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #938787; color: #FFFFFF">13</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -879,7 +879,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #8E888A; color: #FFFFFF">12</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #978583; color: #FFFFFF">14</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -895,7 +895,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #B87363; color: #FFFFFF">24</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #9B8380; color: #FFFFFF">15</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:9%;height:16px;">
+<div style="background:#5BBCD6;width:29.0322580645161%;height:16px;">
 
 </div>
 </div></td>
@@ -911,7 +911,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #978583; color: #FFFFFF">14</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #9E827D; color: #FFFFFF">16</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -927,7 +927,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #858B91; color: #FFFFFF">10</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #A2807A; color: #FFFFFF">17</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:7%;height:16px;">
+<div style="background:#5BBCD6;width:22.5806451612903%;height:16px;">
 
 </div>
 </div></td>
@@ -943,7 +943,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #AC7B70; color: #FFFFFF">20</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #A57E76; color: #FFFFFF">18</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:2%;height:16px;">
+<div style="background:#5BBCD6;width:6.45161290322581%;height:16px;">
 
 </div>
 </div></td>
@@ -959,7 +959,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #AC7B70; color: #FFFFFF">20</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #A97C73; color: #FFFFFF">19</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:1%;height:16px;">
+<div style="background:#5BBCD6;width:3.2258064516129%;height:16px;">
 
 </div>
 </div></td>
@@ -975,7 +975,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #A2807A; color: #FFFFFF">17</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #AC7B70; color: #FFFFFF">20</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:3%;height:16px;">
+<div style="background:#5BBCD6;width:9.67741935483871%;height:16px;">
 
 </div>
 </div></td>
@@ -991,7 +991,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #BE6F5C; color: #FFFFFF">26</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #AF796D; color: #FFFFFF">21</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:5%;height:16px;">
+<div style="background:#5BBCD6;width:16.1290322580645%;height:16px;">
 
 </div>
 </div></td>
@@ -1007,7 +1007,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #9E827D; color: #FFFFFF">16</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #B27769; color: #FFFFFF">22</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:6%;height:16px;">
+<div style="background:#5BBCD6;width:19.3548387096774%;height:16px;">
 
 </div>
 </div></td>
@@ -1039,7 +1039,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #9E827D; color: #FFFFFF">16</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #B87363; color: #FFFFFF">24</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:8%;height:16px;">
+<div style="background:#5BBCD6;width:25.8064516129032%;height:16px;">
 
 </div>
 </div></td>
@@ -1055,7 +1055,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #CA644C; color: #FFFFFF">31</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #BB7160; color: #FFFFFF">25</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:6%;height:16px;">
+<div style="background:#5BBCD6;width:19.3548387096774%;height:16px;">
 
 </div>
 </div></td>
@@ -1071,7 +1071,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #B57566; color: #FFFFFF">23</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #BE6F5C; color: #FFFFFF">26</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:3%;height:16px;">
+<div style="background:#5BBCD6;width:9.67741935483871%;height:16px;">
 
 </div>
 </div></td>
@@ -1103,7 +1103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #B57566; color: #FFFFFF">23</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #C36B56; color: #FFFFFF">28</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:5%;height:16px;">
+<div style="background:#5BBCD6;width:16.1290322580645%;height:16px;">
 
 </div>
 </div></td>
@@ -1119,7 +1119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #B27769; color: #FFFFFF">22</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #C66953; color: #FFFFFF">29</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:7%;height:16px;">
+<div style="background:#5BBCD6;width:22.5806451612903%;height:16px;">
 
 </div>
 </div></td>
@@ -1135,7 +1135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center gt_striped" headers="mean_projection" style="background-color: #B87363; color: #FFFFFF">24</td>
 <td class="gt_row gt_center gt_striped" headers="actual_1" style="background-color: #C8674F; color: #FFFFFF">30</td>
 <td class="gt_row gt_center gt_striped" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:6%;height:16px;">
+<div style="background:#5BBCD6;width:19.3548387096774%;height:16px;">
 
 </div>
 </div></td>
@@ -1151,7 +1151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_center" headers="mean_projection" style="background-color: #3B9AB2; color: #FFFFFF">0</td>
 <td class="gt_row gt_center" headers="actual_1" style="background-color: #CA644C; color: #FFFFFF">31</td>
 <td class="gt_row gt_center" headers="change_score"><div style="flex-grow:1;margin-left:8px;background:#e1e1e1;">
-<div style="background:#5BBCD6;width:31%;height:16px;">
+<div style="background:#5BBCD6;width:100%;height:16px;">
 
 </div>
 </div></td>

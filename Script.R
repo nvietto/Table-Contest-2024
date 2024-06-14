@@ -34,7 +34,7 @@ data |>
   gt() |> 
   tab_header(
     title = md('**All Mocks are Wrong, but Some are Useful**'),
-    subtitle = md('*The final 2024 Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)*')) |> 
+    subtitle = md('*The final 2024 `NFL` Mock Drafts from Daniel Jeremiah (DJ), Peter Schrager (PS), Mel Kiper (MK), Bucky Brooks (BB)*')) |> 
   tab_options(
     heading.align = "Center",
     heading.title.font.size = px(24),
@@ -54,7 +54,7 @@ data |>
     domain = c(0, 100),
     palette = color_palette) |> 
   opt_stylize(style = 6) |> 
-  gt_plt_bar_pct(change_score, fill="#5BBCD6", scaled = TRUE) |> 
+  gt_plt_bar_pct(change_score, fill="#5BBCD6", scaled = FALSE) |> 
   cols_align(align = "center", columns = c(mean_projection, actual_1, change_score)) |> 
   tab_source_note(source_note = ("Data: NFL.com and Sharp Football | Table created by Nicholas Vietto for the 2024 Posit Table Contest"))
 
