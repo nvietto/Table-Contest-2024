@@ -1,5 +1,7 @@
 # Table-Contest-2024 (All Mocks are Wrong, but Some are Useful)
 
+Static table submission for the [2024 Posit Table Contest](https://posit.co/blog/announcing-the-2024-table-contest/). 
+
 ## Full Description:
 This table presents the first-round results of the 2024 NFL Draft alongside the final 2024 NFL Mock Draft predictions from the four most popular draft analysts. Although mock drafts offer engaging content throughout the draft season, their accuracy typically declines after the top four picks.
 
@@ -14,12 +16,4 @@ This table was built in R using [{gt}](https://gt.rstudio.com/) and [{gtExtras}]
 
 Data wrangling was completed using [{janitor}](https://github.com/sfirke/janitor), [{readxl}](https://github.com/tidyverse/readxl), and [{tidyverse}](https://www.tidyverse.org/). 
 
-## Table Contest Information and Submission:
-
-Static table submission for the [2024 Posit Table Contest](https://posit.co/blog/announcing-the-2024-table-contest/). 
-
-Check out the submission [here](https://nvietto.quarto.pub/all-mocks-are-wrong-but-some-are-useful/)
-
-
 ![](https://github.com/nvietto/Table-Contest-2024/blob/main/image.png)
-
