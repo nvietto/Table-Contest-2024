@@ -2,7 +2,7 @@
 
 Static table submission for the [2024 Posit Table Contest](https://posit.co/blog/announcing-the-2024-table-contest/). 
 
-Submission [here](https://nvietto.quarto.pub/all-mocks-are-wrong-but-some-are-useful/)
+Submission [here](https://nvietto.quarto.pub/all-mocks-are-wrong-but-some-are-useful/).
 
 ## Full Description:
 This table presents the first-round results of the 2024 NFL Draft alongside the final 2024 NFL Mock Draft predictions from the four most popular draft analysts. Although mock drafts offer engaging content throughout the draft season, their accuracy typically declines after the top four picks.
